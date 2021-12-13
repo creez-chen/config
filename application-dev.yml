@@ -1,0 +1,15 @@
+spring:
+  profiles:
+    active: dev #指定为开发环境
+    
+#数据库配置
+  datasource:
+    url: jdbc:mysql://localhost:3306/jocko?useUnicode=true&characterEncoding=utf8&autoReconnect=true
+    username: root
+    password: 1q2w3e4r5t
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    druid:
+      web-stat-filter:
+        enabled: false
+      companies:
+        url: jdbc:mysql://localhost:3306/jocko_companies?useUnicode=true&characterEncoding=utf8&autoReconnect=true
